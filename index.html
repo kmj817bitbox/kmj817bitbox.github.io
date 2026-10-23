@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Myeongju Kim</title>
+  <meta name="description" content="Myeongju Kim — Environmental engineer and M.S.E. candidate at Johns Hopkins University focusing on disaster resilience and hazard modeling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Topographic contour pattern, reused as a background motif -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <path id="contour" d="M300 120c90 -10 170 40 190 120s-20 160 -100 190s-190 20 -250 -40s-60 -150 -10 -210s80 -55 170 -60z" />
+      <g id="contours" fill="none" stroke="currentColor">
+        <use href="#contour" transform="translate(300 270) scale(1.55) translate(-300 -270)" />
+        <use href="#contour" transform="translate(300 270) scale(1.3) translate(-300 -270)" />
+        <use href="#contour" transform="translate(300 270) scale(1.05) translate(-300 -270)" />
+        <use href="#contour" transform="translate(300 270) scale(0.8) translate(-300 -270)" />
+        <use href="#contour" transform="translate(300 270) scale(0.56) translate(-300 -270)" />
+        <use href="#contour" transform="translate(300 270) scale(0.33) translate(-300 -270)" />
+        <use href="#contour" transform="translate(300 270) scale(0.12) translate(-300 -270)" />
+      </g>
+    </defs>
+  </svg>
+
+  <header class="nav">
+    <a class="nav-logo" href="#top">Myeongju Kim</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">Field</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <svg class="hero-topo" viewBox="0 0 600 540" aria-hidden="true"><use href="#contours" /></svg>
+      <div class="hero-text">
+        <p class="coord">39.3299° N, 76.6205° W · Baltimore</p>
+        <h1>Myeongju<br><em>Kim</em></h1>
+        <p class="lede">Environmental engineer mapping <strong>flood and disaster risk</strong> with GIS, statistics and machine learning — and carrying that evidence into climate policy.</p>
+        <div class="cta">
+          <a class="btn primary" href="assets/Myeongju_Kim_CV.pdf" download>Download CV ↓</a>
+          <a class="btn" data-linkedin href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="mailto:kimmyeongju0817@gmail.com">Email</a>
+        </div>
+      </div>
+      <!-- Higgsfield 영상을 assets/hero.mp4 로 넣으면 사진 대신 영상이 재생됩니다 -->
+      <figure class="hero-visual">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+        <img src="assets/profile.jpg" alt="Portrait of Myeongju Kim">
+        <figcaption><span class="dot"></span>Research Assistant · Johns Hopkins</figcaption>
+      </figure>
+    </section>
+
+    <section class="stats" aria-label="Highlights">
+      <div><b>JHU</b><span>M.S.E. Geography &amp; Environmental Engineering</span></div>
+      <div><b>UN ESCAP</b><span>Disaster Risk Reduction Division</span></div>
+      <div><b>COP28 · 29</b><span>Youth Delegate, UNFCCC</span></div>
+      <div><b>KPMG</b><span>ESG &amp; climate disclosure</span></div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <p class="label">01 — About</p>
+      <div class="about-grid">
+        <p class="about-lead">I work at the intersection of <strong>data, hazards and policy</strong>. At Johns Hopkins I build machine‑learning and hybrid statistical/physics‑based models to predict flood extent across the Southeastern U.S. Before that, I used <strong>GIS (QGIS)</strong> at UN ESCAP to map disaster risk and assess vulnerability across the Asia‑Pacific, supported climate disclosures at KPMG Korea, and represented Asian youth on climate finance at COP28 and COP29.</p>
+        <ul class="facts">
+          <li><span>Focus</span>Flood &amp; hazard modeling</li>
+          <li><span>Based</span>Baltimore, MD</li>
+          <li><span>Tools</span>Python · R · QGIS</li>
+          <li><span>Languages</span>Korean · English</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <p class="label">02 — Experience</p>
+      <h2>Where I've worked</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">Aug 2026 — Present</div>
+          <div class="what">
+            <h3>Research Assistant</h3>
+            <p class="org">Johns Hopkins University</p>
+            <ul><li>Developing machine learning and hybrid statistical and physics‑based models to predict flood extent across the Southeastern U.S. using GIS, geospatial data processing and quantitative analysis.</li></ul>
+            <p class="tags"><span>Python</span><span>Machine learning</span><span>GIS</span></p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Nov 2025 — Jun 2026</div>
+          <div class="what">
+            <h3>ESG Intern, COE</h3>
+            <p class="org">Samjong KPMG (KPMG Korea)</p>
+            <ul>
+              <li>Data analysis for corporate sustainability reporting and climate‑related financial disclosures for clients including Samsung Securities and Hanwha General Insurance.</li>
+              <li>Processed environmental and climate datasets in line with reporting frameworks; generated data‑driven inputs for sustainability reports.</li>
+            </ul>
+            <p class="tags"><span>Climate disclosure</span><span>ESG reporting</span><span>Data analysis</span></p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Sep 2024 — Feb 2025</div>
+          <div class="what">
+            <h3>Intern, Disaster Risk Reduction Division</h3>
+            <p class="org">United Nations ESCAP · Bangkok</p>
+            <ul>
+              <li>Geospatial risk modeling with QGIS and statistical data to strengthen disaster monitoring and infrastructure resilience planning in Asia‑Pacific.</li>
+              <li>Vulnerability assessments using regional crop calendars to inform food and water security strategies.</li>
+            </ul>
+            <p class="tags"><span>QGIS</span><span>Risk mapping</span><span>Vulnerability assessment</span></p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Mar 2023 — Jul 2025</div>
+          <div class="what">
+            <h3>Project Manager</h3>
+            <p class="org">Climate Change Youth Organization GEYK (NGO)</p>
+            <ul>
+              <li>Youth Delegate at COP28 &amp; COP29; led the Asian Youth Dialogue on climate finance.</li>
+              <li>Led and spoke at the Youth Climate Forum on Food and Water Security (COP28, 300+ attendees).</li>
+              <li>Hosted the Korea Local Conference of Youth “NextGen's NCQG” under UNFCCC YOUNGO.</li>
+            </ul>
+            <p class="tags"><span>Climate finance</span><span>Event leadership</span><span>Public speaking</span></p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Jun 2023 — Feb 2024</div>
+          <div class="what">
+            <h3>Intern, Water Cycle Research Center</h3>
+            <p class="org">Korea Institute of Science and Technology (KIST)</p>
+            <ul>
+              <li>Supported life cycle assessment for hydrogen peroxide with three‑sector (economic, environmental, social) analysis.</li>
+              <li>Gas chromatographic analysis for contaminant detection in water systems.</li>
+            </ul>
+            <p class="tags"><span>LCA</span><span>openLCA</span><span>Gas chromatography</span></p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Mar 2023 — Sep 2023</div>
+          <div class="what">
+            <h3>Undergraduate Researcher</h3>
+            <p class="org">Environmental Modeling &amp; Chemistry Laboratory</p>
+            <ul><li>Modeled hydraulic and water‑quality impacts of dredging on Jungnangcheon Stream using WASP.</li></ul>
+            <p class="tags"><span>WASP</span><span>Water quality modeling</span></p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Mar 2022 — Jul 2023</div>
+          <div class="what">
+            <h3>Project Owner</h3>
+            <p class="org">Youth Social Innovator Group SK‑Rookie</p>
+            <ul><li>Led agricultural operations and strategy for the ourgrader brokerage platform, including field research with farmers.</li></ul>
+            <p class="tags"><span>Field research</span><span>Stakeholder engagement</span></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="gallery" class="section reveal">
+      <p class="label">03 — In the Field</p>
+      <h2>Moments from the work</h2>
+      <div class="gallery">
+        <figure class="wide"><img src="assets/photos/cop29-asian-youth-dialogue.jpg" alt="Asian Youth Dialogue on Climate Finance at COP29" loading="lazy"><figcaption>Asian Youth Dialogue on Climate Finance · COP29</figcaption></figure>
+        <figure class="tall"><img src="assets/photos/unescap-bangkok.jpg" alt="Myeongju at the UN ESCAP building in Bangkok" loading="lazy"><figcaption>UN ESCAP · Bangkok</figcaption></figure>
+        <figure class="tall"><img src="assets/photos/cop29-korea-pavilion.jpg" alt="Myeongju at the Korea Pavilion, COP29" loading="lazy"><figcaption>Korea Pavilion · COP29, Baku</figcaption></figure>
+        <figure><img src="assets/photos/cop29-panel.jpg" alt="Youth panel discussion at the Korea Pavilion" loading="lazy"><figcaption>Youth panel · Korea Pavilion</figcaption></figure>
+        <figure><img src="assets/photos/cop29-delegates.jpg" alt="Youth delegates at COP29" loading="lazy"><figcaption>Youth delegates · COP29</figcaption></figure>
+        <figure class="tall"><img src="assets/photos/techcamp-2026.jpg" alt="Myeongju holding a TechCamp Korea 2026 certificate" loading="lazy"><figcaption>TechCamp Korea 2026 · U.S. Embassy Seoul</figcaption></figure>
+        <figure class="tall"><img src="assets/photos/cop29-badge.jpg" alt="UNFCCC COP29 delegate badge" loading="lazy"><figcaption>UNFCCC delegate · COP29</figcaption></figure>
+        <figure><img src="assets/photos/unescap-flags.jpg" alt="UN ESCAP flag plaza" loading="lazy"><figcaption>Disaster Risk Reduction internship · UN ESCAP</figcaption></figure>
+        <figure><img src="assets/photos/techcamp-team.jpg" alt="TechCamp Korea 2026 team" loading="lazy"><figcaption>TechCamp Korea 2026 team</figcaption></figure>
+      </div>
+    </section>
+
+    <dialog id="lightbox"><img alt=""><p></p></dialog>
+
+    <section id="education" class="section reveal">
+      <p class="label">04 — Education</p>
+      <h2>Training</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="when">Expected May 2027</p>
+          <h3>Johns Hopkins University</h3>
+          <p class="org">M.S.E. in Geography and Environmental Engineering · Whiting School of Engineering</p>
+          <p>Coursework: Natural Disaster Risk Modeling, Remote Sensing of the Environment, Numerical Methods</p>
+        </article>
+        <article class="card">
+          <p class="when">March 2026</p>
+          <h3>Seoul National University of Science and Technology</h3>
+          <p class="org">B.S. in Environmental Engineering and Global Technology Management</p>
+          <p>Thesis: <em>Development and Application of a Multidimensional Green Budget Tagging Framework for Climate and Environmental Public Financial Management in South Korea</em> — manuscript under review.</p>
+        </article>
+      </div>
+
+      <div class="skills">
+        <div><h3>Analysis</h3><p class="tags"><span>Statistical analysis</span><span>Spatial analysis</span><span>LCA</span></p></div>
+        <div><h3>Data &amp; Technical</h3><p class="tags"><span>Python</span><span>R</span><span>QGIS</span><span>Excel</span><span>WASP</span><span>AquaCrop</span><span>openLCA</span></p></div>
+        <div><h3>Management</h3><p class="tags"><span>Project planning</span><span>Team coordination</span><span>Stakeholder engagement</span></p></div>
+        <div><h3>Certification</h3><p class="tags"><span>Google Data Analytics</span><span>ESG Management Insight Specialist</span></p></div>
+      </div>
+    </section>
+
+    <section id="awards" class="section reveal">
+      <p class="label">05 — Recognition</p>
+      <h2>Awards &amp; leadership</h2>
+      <ul class="awards">
+        <li><b>2026</b>TechCamp Korea — Certificate of Completion, U.S. Embassy Seoul</li>
+        <li><b>2025</b>Forest &amp; Sharing Environmental Academic Forum — Merit Prize</li>
+        <li><b>2024</b>Advanced Training Program for Experts in International Meteorological Standardization</li>
+        <li><b>2024</b>Anti‑Corruption and Civil Rights Commission Integrity Debate — Silver Prize</li>
+        <li><b>2024</b>Youth National Fiscal Master Program — National Fiscal Master, NSI Foundation</li>
+        <li><b>2024</b>Climate Reality Project Training</li>
+        <li><b>2023–</b>YOUNGO, Official Youth Constituency of the UNFCCC</li>
+        <li><b>2022</b>Hult Prize On Campus — 2nd Place</li>
+        <li><b>2021</b>Korea Meteorological Administration Debate Contest — Grand Prize</li>
+        <li><b>2021</b>Vice President, UNEP ANGEL (UNEP Korea Association)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <svg class="contact-topo" viewBox="0 0 600 540" aria-hidden="true"><use href="#contours" /></svg>
+      <div class="contact-inner reveal">
+        <p class="label">06 — Contact</p>
+        <h2>Let's build more<br><em>resilient</em> places.</h2>
+        <p>Open to research collaborations and roles in climate risk, hazard modeling and resilience.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:kimmyeongju0817@gmail.com">kimmyeongju0817@gmail.com</a>
+          <a class="btn" data-linkedin href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Myeongju Kim</footer>
+  <script src="script.js"></script>
+</body>
+</html>
