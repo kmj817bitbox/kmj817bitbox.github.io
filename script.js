@@ -21,6 +21,16 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
+// Experience filter by organization type
+const filterButtons = document.querySelectorAll(".filters button");
+filterButtons.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    filterButtons.forEach((b) => b.classList.toggle("active", b === btn));
+    const f = btn.dataset.filter;
+    document.querySelectorAll(".timeline > li").forEach((li) => (li.hidden = f !== "all" && li.dataset.type !== f));
+  })
+);
+
 // Gallery lightbox
 const lightbox = document.getElementById("lightbox");
 document.querySelectorAll(".gallery figure").forEach((fig) =>

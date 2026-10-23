@@ -35,6 +35,7 @@
       <a href="#gallery">Field</a>
       <a href="#education">Education</a>
       <a href="#awards">Awards</a>
+      <a href="#affiliations">Affiliations</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
@@ -86,19 +87,28 @@
     <section id="experience" class="section reveal">
       <p class="label">02 — Experience</p>
       <h2>Where I've worked</h2>
+      <div class="filters" role="group" aria-label="Filter by organization type">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="research">Research &amp; Academia</button>
+        <button data-filter="intl">International Organizations</button>
+        <button data-filter="industry">Industry</button>
+        <button data-filter="ngo">NGO &amp; Youth</button>
+      </div>
       <ol class="timeline">
-        <li>
+        <li data-type="research">
           <div class="when">Aug 2026 — Present</div>
           <div class="what">
+            <span class="type type-research">Academia</span>
             <h3>Research Assistant</h3>
             <p class="org">Johns Hopkins University</p>
             <ul><li>Developing machine learning and hybrid statistical and physics‑based models to predict flood extent across the Southeastern U.S. using GIS, geospatial data processing and quantitative analysis.</li></ul>
             <p class="tags"><span>Python</span><span>Machine learning</span><span>GIS</span></p>
           </div>
         </li>
-        <li>
+        <li data-type="industry">
           <div class="when">Nov 2025 — Jun 2026</div>
           <div class="what">
+            <span class="type type-industry">Industry</span>
             <h3>ESG Intern, COE</h3>
             <p class="org">Samjong KPMG (KPMG Korea)</p>
             <ul>
@@ -108,9 +118,10 @@
             <p class="tags"><span>Climate disclosure</span><span>ESG reporting</span><span>Data analysis</span></p>
           </div>
         </li>
-        <li>
+        <li data-type="intl">
           <div class="when">Sep 2024 — Feb 2025</div>
           <div class="what">
+            <span class="type type-intl">International Organization</span>
             <h3>Intern, Disaster Risk Reduction Division</h3>
             <p class="org">United Nations ESCAP · Bangkok</p>
             <ul>
@@ -120,9 +131,10 @@
             <p class="tags"><span>QGIS</span><span>Risk mapping</span><span>Vulnerability assessment</span></p>
           </div>
         </li>
-        <li>
+        <li data-type="ngo">
           <div class="when">Mar 2023 — Jul 2025</div>
           <div class="what">
+            <span class="type type-ngo">NGO &amp; Youth</span>
             <h3>Project Manager</h3>
             <p class="org">Climate Change Youth Organization GEYK (NGO)</p>
             <ul>
@@ -133,9 +145,10 @@
             <p class="tags"><span>Climate finance</span><span>Event leadership</span><span>Public speaking</span></p>
           </div>
         </li>
-        <li>
+        <li data-type="research">
           <div class="when">Jun 2023 — Feb 2024</div>
           <div class="what">
+            <span class="type type-research">Research Institute</span>
             <h3>Intern, Water Cycle Research Center</h3>
             <p class="org">Korea Institute of Science and Technology (KIST)</p>
             <ul>
@@ -145,18 +158,20 @@
             <p class="tags"><span>LCA</span><span>openLCA</span><span>Gas chromatography</span></p>
           </div>
         </li>
-        <li>
+        <li data-type="research">
           <div class="when">Mar 2023 — Sep 2023</div>
           <div class="what">
+            <span class="type type-research">Academia</span>
             <h3>Undergraduate Researcher</h3>
             <p class="org">Environmental Modeling &amp; Chemistry Laboratory</p>
             <ul><li>Modeled hydraulic and water‑quality impacts of dredging on Jungnangcheon Stream using WASP.</li></ul>
             <p class="tags"><span>WASP</span><span>Water quality modeling</span></p>
           </div>
         </li>
-        <li>
+        <li data-type="ngo">
           <div class="when">Mar 2022 — Jul 2023</div>
           <div class="what">
+            <span class="type type-ngo">NGO &amp; Youth</span>
             <h3>Project Owner</h3>
             <p class="org">Youth Social Innovator Group SK‑Rookie</p>
             <ul><li>Led agricultural operations and strategy for the ourgrader brokerage platform, including field research with farmers.</li></ul>
@@ -211,26 +226,71 @@
     </section>
 
     <section id="awards" class="section reveal">
-      <p class="label">05 — Recognition</p>
-      <h2>Awards &amp; leadership</h2>
+      <p class="label">05 — Awards</p>
+      <h2>Awards &amp; honors</h2>
       <ul class="awards">
-        <li><b>2026</b>TechCamp Korea — Certificate of Completion, U.S. Embassy Seoul</li>
-        <li><b>2025</b>Forest &amp; Sharing Environmental Academic Forum — Merit Prize</li>
-        <li><b>2024</b>Advanced Training Program for Experts in International Meteorological Standardization</li>
-        <li><b>2024</b>Anti‑Corruption and Civil Rights Commission Integrity Debate — Silver Prize</li>
-        <li><b>2024</b>Youth National Fiscal Master Program — National Fiscal Master, NSI Foundation</li>
-        <li><b>2024</b>Climate Reality Project Training</li>
-        <li><b>2023–</b>YOUNGO, Official Youth Constituency of the UNFCCC</li>
-        <li><b>2022</b>Hult Prize On Campus — 2nd Place</li>
-        <li><b>2021</b>Korea Meteorological Administration Debate Contest — Grand Prize</li>
-        <li><b>2021</b>Vice President, UNEP ANGEL (UNEP Korea Association)</li>
+        <li><b>2025</b><span><span class="prize">Merit Prize</span>Forest &amp; Sharing Environmental Academic Forum<small>Analysis of the domestic environmental budget and strengthening its classification system using the Green Taxonomy</small></span></li>
+        <li><b>2024</b><span><span class="prize">Silver Prize</span>Anti‑Corruption and Civil Rights Commission Integrity Debate Competition</span></li>
+        <li><b>2024</b><span><span class="prize">National Fiscal Master</span>Youth National Fiscal Master Program, NSI Foundation</span></li>
+        <li><b>2022</b><span><span class="prize">2nd Place</span>Hult Prize On Campus — Business Model Design Competition<small>Business model for solving rural labor shortages</small></span></li>
+        <li><b>2021</b><span><span class="prize">Grand Prize</span>Korea Meteorological Administration Debate Contest<small>AI‑based customized weather forecast information system for socially disadvantaged citizens</small></span></li>
       </ul>
+    </section>
+
+    <section id="training" class="section reveal">
+      <p class="label">06 — Certificates &amp; Training</p>
+      <h2>Certificates &amp; training</h2>
+      <ul class="awards">
+        <li><b>2026</b><span>TechCamp Korea — Certificate of Completion<small>U.S. Embassy Seoul</small></span></li>
+        <li><b>2025</b><span>ESG Management Insight Specialist<small>WE&amp;ME HRD Education Center</small></span></li>
+        <li><b>2024</b><span>Advanced Training Program for Experts in International Meteorological Standardization<small>Bee Early Warning System project</small></span></li>
+        <li><b>2024</b><span>Climate Reality Project Training<small>Leadership training on science‑backed climate solutions</small></span></li>
+        <li><b>2024</b><span>Inter‑Korean Green Detente Youth Camp<small>Ministry of Unification</small></span></li>
+        <li><b>—</b><span>Google Data Analytics Certificate<small>Spreadsheets, SQL, R, Tableau</small></span></li>
+      </ul>
+    </section>
+
+    <section id="affiliations" class="section reveal">
+      <p class="label">07 — Affiliations</p>
+      <h2>Organizations &amp; leadership</h2>
+      <div class="orgs">
+        <article class="org-card">
+          <span class="type type-intl">UNFCCC Constituency</span>
+          <h3>YOUNGO</h3>
+          <p class="role">Member · 2023 — Present</p>
+          <p>Official Youth Constituency of the UNFCCC — youth climate policy discussions and international climate negotiations.</p>
+        </article>
+        <article class="org-card">
+          <span class="type type-ngo">NGO</span>
+          <h3>GEYK — Climate Change Youth Organization</h3>
+          <p class="role">Project Manager · 2023 — 2025</p>
+          <p>Youth delegation to COP28 &amp; COP29; Asian Youth Dialogue on climate finance.</p>
+        </article>
+        <article class="org-card">
+          <span class="type type-ngo">UNEP Korea Association</span>
+          <h3>UNEP ANGEL</h3>
+          <p class="role">Vice President · 2021</p>
+          <p>Managed three climate action plans for resilient response.</p>
+        </article>
+        <article class="org-card">
+          <span class="type type-research">University</span>
+          <h3>Student Council, Dept. of Environmental Engineering</h3>
+          <p class="role">Director of Public Relations · 2022 — 2023</p>
+          <p>Led external communications and promoted 10+ major academic and social events.</p>
+        </article>
+        <article class="org-card">
+          <span class="type type-ngo">Volunteer</span>
+          <h3>Nanum Korea</h3>
+          <p class="role">Volunteer Translator · 2020</p>
+          <p>Translated educational magazines for children from multicultural families.</p>
+        </article>
+      </div>
     </section>
 
     <section id="contact" class="contact">
       <svg class="contact-topo" viewBox="0 0 600 540" aria-hidden="true"><use href="#contours" /></svg>
       <div class="contact-inner reveal">
-        <p class="label">06 — Contact</p>
+        <p class="label">08 — Contact</p>
         <h2>Let's build more<br><em>resilient</em> places.</h2>
         <p>Open to research collaborations and roles in climate risk, hazard modeling and resilience.</p>
         <div class="cta">

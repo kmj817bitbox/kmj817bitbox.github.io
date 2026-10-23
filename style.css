@@ -166,8 +166,41 @@ em { font-style: italic; }
 /* Awards */
 .awards { list-style: none; padding: 0; margin: 0; }
 .awards li { display: grid; grid-template-columns: 90px 1fr; gap: 1rem; padding: 1.05rem 0; border-top: 1px solid var(--line); transition: padding 0.2s, color 0.2s; }
-.awards li:hover { padding-left: 0.5rem; color: var(--accent); }
+.awards li:hover { padding-left: 0.5rem; }
 .awards b { font-family: var(--mono); color: var(--muted); font-weight: 400; font-size: 0.85rem; padding-top: 0.1rem; }
+.awards small { display: block; color: var(--muted); font-size: 0.85rem; margin-top: 0.15rem; }
+.prize { display: inline-block; margin-right: 0.6rem; padding: 0.1rem 0.6rem; border-radius: 6px; background: var(--text); color: var(--bg); font-size: 0.75rem; font-weight: 600; vertical-align: 2px; }
+
+/* Organization type badges (shared by experience + affiliations) */
+.type { display: inline-block; font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.2rem 0.55rem; border-radius: 4px; margin-bottom: 0.5rem; border: 1px solid currentColor; }
+.type-research { color: #2f6db5; }
+.type-intl { color: #1e6b57; }
+.type-industry { color: #8a5a12; }
+.type-ngo { color: #a3466b; }
+:root[data-theme="dark"] .type-research { color: #8ab8ee; }
+:root[data-theme="dark"] .type-intl { color: #74c9ab; }
+:root[data-theme="dark"] .type-industry { color: #e0b46a; }
+:root[data-theme="dark"] .type-ngo { color: #e79ab8; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .type-research { color: #8ab8ee; }
+  :root:not([data-theme="light"]) .type-intl { color: #74c9ab; }
+  :root:not([data-theme="light"]) .type-industry { color: #e0b46a; }
+  :root:not([data-theme="light"]) .type-ngo { color: #e79ab8; }
+}
+
+/* Experience filters */
+.filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: -1rem 0 2.5rem; }
+.filters button { font: 500 0.85rem var(--sans); color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 1rem; cursor: pointer; transition: 0.2s; }
+.filters button:hover { color: var(--text); border-color: var(--text); }
+.filters button.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+.timeline > li[hidden] { display: none; }
+
+/* Affiliations */
+.orgs { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+.org-card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 1.5rem; }
+.org-card h3 { font-family: var(--serif); font-weight: 400; font-size: 1.3rem; margin-top: 0.3rem; }
+.org-card .role { color: var(--accent); font-weight: 500; font-size: 0.88rem; margin: 0.35rem 0 0.6rem; }
+.org-card p:last-child { color: var(--muted); font-size: 0.93rem; margin: 0; }
 
 /* Contact — dark band */
 .contact { position: relative; overflow: hidden; margin-top: 8rem; background: var(--ink); color: var(--ink-text); text-align: center; padding: 8rem 16px; }
